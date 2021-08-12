@@ -12,7 +12,7 @@ echo "GDK: building with ${NUM_JOBS} cores in ${GDK_PATH}"
 mkdir -p ${GDK_PATH}
 
 if [ ! -d "${GDK_PATH}/src" ]; then
-    git clone --quiet --depth 1 --branch ${GDKTAG} --single-branch https://github.com/Blockstream/gdk.git ${GDK_PATH}/src > ${GDK_PATH}/build.log 2>&1
+    git clone --quiet --depth 1 --branch ${GDKTAG} --single-branch https://github.com/lvaccaro/gdk.git ${GDK_PATH}/src > ${GDK_PATH}/build.log 2>&1
 fi
 
 cd ${GDK_PATH}/src
